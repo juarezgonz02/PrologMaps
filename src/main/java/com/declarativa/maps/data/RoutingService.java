@@ -76,8 +76,9 @@ public class RoutingService {
         InstructionList il = path.getInstructions();
         // iterate over all turn instructions
         List<RoutingData> list = new ArrayList<>();
+
         for (Instruction instruction : il) {
-            // System.out.println("distance " + instruction.getDistance() + " for instruction: " + instruction.getTurnDescription(tr));
+            System.out.println("distance " + instruction.getDistance() + " for instruction: " + instruction.getTurnDescription(tr));
             list.add(new RoutingData(instruction.getDistance(), instruction.getTurnDescription(tr), instruction.getPoints()));
         }
         return list;

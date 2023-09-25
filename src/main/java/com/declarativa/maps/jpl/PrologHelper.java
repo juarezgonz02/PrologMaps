@@ -67,7 +67,7 @@ public final class PrologHelper {
         Term lat = solution.get("LAT");
         Term lon = solution.get("LON");
 
-        route.add(new GHPoint(lat.doubleValue(), lon.doubleValue()));
+        //route.add(new GHPoint(lat.doubleValue(), lon.doubleValue()));
 
         }
         return route;

@@ -1,5 +1,6 @@
 package com.declarativa.maps.data;
 
+import com.graphhopper.GraphHopper;
 import com.graphhopper.util.shapes.GHPoint3D;
 import lombok.Getter;
 import org.jxmapviewer.JXMapViewer;
@@ -13,6 +14,18 @@ import java.util.function.Consumer;
 
 @Getter
 public class JXMapViewerCustom extends JXMapViewer {
+
+    private static JXMapViewerCustom instance;
+
+    public static JXMapViewerCustom getInstance() {
+        if (instance == null) {
+            instance = new JXMapViewerCustom();
+        }
+        return instance;
+    }
+
+    private JXMapViewerCustom() {
+    }
 
     public void setRoutingData(List<RoutingData> routingData) {
         this.routingData = routingData;
@@ -33,7 +46,7 @@ public class JXMapViewerCustom extends JXMapViewer {
                 draw(p2, d);
             }
             g2.setColor(new Color(28, 23, 255));
-            g2.setStroke(new BasicStroke(5f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+            g2.setStroke(new BasicStroke(5f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER));
             g2.draw(p2);
             g2.dispose();
         }

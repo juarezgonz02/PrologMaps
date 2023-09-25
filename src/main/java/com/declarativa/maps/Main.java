@@ -34,6 +34,8 @@ public class Main extends JFrame {
     private final Set<GenericWaypoint> waypoints = new HashSet<>();
     private List<RoutingData> routingData = new ArrayList<>();
     private PrologHelper prolog ;
+    private GenericWaypoint start = null;
+    private GenericWaypoint end = null;
 
     public Main() {
         initComponents();
@@ -78,17 +80,6 @@ public class Main extends JFrame {
 
     private void createRoute() {
 
-        GenericWaypoint start = null;
-        GenericWaypoint end = null;
-
-        for (GenericWaypoint w : waypoints) {
-            if (w.getPointType() == GenericWaypoint.PointType.START) {
-                start = w;
-            } else if (w.getPointType() == GenericWaypoint.PointType.END) {
-                end = w;
-            }
-        }
-
         if (start != null && end != null) {
             List<GHPoint> points = new ArrayList<>();
 
@@ -110,6 +101,8 @@ public class Main extends JFrame {
     }
     private void clearRoute() {
         routingData.clear();
+        jXMapViewer.setRoutingData(routingData);
+
     }
 
 
@@ -121,7 +114,7 @@ public class Main extends JFrame {
 
         JMenuItem menuStart = new JMenuItem();
         JMenuItem menuEnd = new JMenuItem();
-        jXMapViewer = new JXMapViewerCustom();
+        jXMapViewer = JXMapViewerCustom.getInstance();
         // Variables declaration - do not modify//GEN-BEGIN:variables
         JButton cmdClear = new JButton();
 
@@ -187,18 +180,26 @@ public class Main extends JFrame {
 
     private void cmdClearActionPerformed(ActionEvent evt) {
         clearRoute();
+        start = null;
+        end = null;
     }
 
     private void menuStartActionPerformed(ActionEvent evt) {
+
         //RoutingService
+        if(start != null) start.setPointType(null);
         jPopupMenu1.getWaypoint().setPointType(GenericWaypoint.PointType.START);
+        start = jPopupMenu1.getWaypoint();
         clearRoute();
         createRoute();
     }
 
     private void menuEndActionPerformed(ActionEvent evt) {
         //RoutingService
+        if(end != null) end.setPointType(null);
         jPopupMenu1.getWaypoint().setPointType(GenericWaypoint.PointType.END);
+        end = jPopupMenu1.getWaypoint();
+
         clearRoute();
         createRoute();
     }
