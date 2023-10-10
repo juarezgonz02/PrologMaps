@@ -51,12 +51,71 @@ lugar('Colegio Champagnat', 13.677793776678312, -89.2822002518485, educacion).
 lugar('Centro Educativo Samaria', 13.676758400942308, -89.29160799874656, educacion).
 lugar('Colegio Coralia Haydee Quiroz', 13.67748731231392, -89.2889276275404, educacion).
 
+% tramo(inicio calle/avenida, final calle/avenida, calle/avenida por la que pasa)
+
+% Glosario:
+% av = Avenida
+% cll = calle
+% sur = sur
+% nrt = norte
+% 
+% cll_dh = Calle Daniel Hernandez
+
+tramo(cll_dh, p_concepcion, cuarta_av_nrt).
+tramo(cll_dh, p_concepcion, octava_av_nrt).
+tramo(cll_dh, p_concepcion, doce_av_nrt).
+tramo(cll_dh, p_concepcion, av_dr_manuel).
+tramo(cll_dh, p_concepcion, decime_sexta_av_nrt).
+
+tramo(p_concepcion, cll_dh, segunda_av_nrt).
+tramo(p_concepcion, cll_dh, sexta_av_nrt).
+tramo(p_concepcion, cll_dh, decima_av_nrt).
+tramo(p_concepcion, cll_dh, sexta_av_nrt).
+tramo(p_concepcion, cll_dh, decime_sexta_av_nrt).
+
+cruze(p_concepcion, segunda_av_nrt).
+cruze(p_concepcion, cuarta_av_nrt, 13.675438424759353, -89.29023249521323).
+cruze(p_concepcion, sexta_av_nrt, 13.675490603934886, -89.29140091164349).
+cruze(p_concepcion, octava_av_nrt, 13.675549107846576, -89.29250423524358).
+cruze(p_concepcion, decima_av_nrt, 13.675582312765469, -89.29363359597787).
+cruze(p_concepcion, doce_av_nrt, 13.675606030561257, -89.29476458402429).
+cruze(p_concepcion, catorce_av_nrt, 13.67566854303401, -89.2958642808099).
+cruze(primer_cll_pte, av_dr_manuel, 13.67535849349693, -89.28798589765644).
+
+cruze(cll_dh, segunda_av_nrt, 13.674302777367807, -89.28916619066771).
+cruze(cll_dh, cuarta_av_nrt, 13.674343919996293, -89.29029133898403).
+cruze(cll_dh, sexta_av_nrt, 13.674396950017606, -89.29146646548088).
+cruze(cll_dh, octava_av_nrt, 13.67444288510778, -89.29257318803316).
+cruze(cll_dh, decima_av_nrt, 13.674469975028554, -89.29367991058288).
+cruze(cll_dh, doce_av_nrt, 13.674479011828982, -89.29479298933757).
+cruze(cll_dh, catorce_av_nrt, 13.674552436990172, -89.29590495137467).
+cruze(cll_dh, av_dr_manuel, 13.674250584216995, -89.28804226345905).
 
 
+ir_hacia(X, Y):-
+    abolish(ruta, 1),
+    assert(ruta(X)),
+    ir_hacia_move(X, Y),
+    writeln(X).
 
 
+ir_hacia_move(X, Y):-
+    tramo(X, Y, Z),
+    writeln(Z),
+    assert(ruta(Y)),
+    !.
 
+ir_hacia_move(X, _):-
+    tramo(X, _, Z),
+    ruta(Z),
+    fail.
 
-
+ir_hacia_move(X, Y):-
+    tramo(X, _, Z),
+    not(ruta(Z)),
+    assert(ruta(Z)),
+    ir_hacia_move(Z, Y),
+    writeln(Z),
+    !.
 
 
