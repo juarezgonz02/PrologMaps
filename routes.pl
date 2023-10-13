@@ -102,7 +102,7 @@ cruze(septima_cll_ort, once_av_nrt, 13.679445696448205, -89.28099011385078).
 
 tramo(crr_panamericana, cll_jose_ciriaco_lopez, av_san_martin).
 tramo(crr_panamericana, cll_jose_ciriaco_lopez, tercera_av_sur).
-tramo(crr_panamericana. cll_jose_ciriaco_lopez, septima_av_sur).
+tramo(crr_panamericana, cll_jose_ciriaco_lopez, septima_av_sur).
 tramo(crr_panamericana, cll_quequeishque, av_boqueron).
 tramo(cll_quequeishque, crr_panamericana, av_boqueron).
 tramo(crr_panamericana, cll_el_carmen, diesciete_av_nrt).
@@ -327,7 +327,7 @@ tramo(seis_cll_ost, crr_panamericana, tercera_av_sur).
 tramo(crr_panamericana, seis_cll_ost, quinta_av_sur).
 tramo(seis_cll_ost, crr_panamericana, septima_av_sur).
 tramo(crr_panamericana, seis_cll_ost, novena_av_sur ).
-tramo(seis_cll_ost, crr_panamericana, ave_zablah_touche).
+tramo(seis_cll_ost, crr_panamericana, av_zablah_touche).
 tramo(seis_cll_ost, crr_panamericana, quince_av_sur).
 tramo(crr_panamericana, seis_cll_ost, quince_av_sur).
 
@@ -337,7 +337,7 @@ cruze(seis_cll_ost, tercera_av_sur, 13.673077498461522, -89.28581405956673).
 cruze(crr_panamericana, quinta_av_sur, 13.671936888062582, -89.2847587652754).
 cruze(seis_cll_ost, septima_av_sur, 13.672993185947128, -89.28356190111192).
 cruze(crr_panamericana, novena_av_sur, 13.671862561390698, -89.28244307510282).
-cruze(seis_cll_ost, ave_zablah_touche, 13.672871502372397, -89.28129271040852).
+cruze(seis_cll_ost, av_zablah_touche, 13.672871502372397, -89.28129271040852).
 cruze(seis_cll_ost, quince_av_sur, 13.671711113082345, -89.2790766542991).
 cruze(crr_panamericana, quince_av_sur, 13.670662524286145, -89.27910209749878).
 
