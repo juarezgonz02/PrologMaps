@@ -120,6 +120,30 @@ cruze(cll_el_carmen, diesciete_av_nrt, 13.672584511931131, -89.27759029792931).
 cruze(crr_panamericana, diecinueve_av_nrt, 13.677083909150953, -89.27599865584885).
 cruze(cll_el_carmen, diecinueve_av_nrt, 13.672218880130082, -89.27640615892243).
 
+tramo(crr_panamericana, crr_panamericana, diecinueve_av_nrt).
+tramo(crr_panamericana, crr_panamericana, diesciete_av_nrt).
+tramo(crr_panamericana, crr_panamericana, av_balden_powell).
+tramo(crr_panamericana, crr_panamericana, av_zablah_touche).
+tramo(crr_panamericana, crr_panamericana, novena_av_sur).
+tramo(crr_panamericana, crr_panamericana, septima_av_sur).
+tramo(crr_panamericana, crr_panamericana, quinta_av_sur).
+tramo(crr_panamericana, crr_panamericana, tercera_av_sur).
+tramo(crr_panamericana, crr_panamericana, primera_av_sur).
+
+
+cruze(crr_panamericana, diecinueve_av_nrt, 13.672139818741606, -89.27634879832159).
+cruze(crr_panamericana, diecinueve_av_nrt, 13.671670701133143, -89.27637830261934).
+cruze(crr_panamericana, diesciete_av_nrt, 13.671727378349724, -89.2776083042744).
+cruze(crr_panamericana, av_balden_powell, 13.672829588997677, -89.28016925639405).
+cruze(crr_panamericana, av_balden_powell, 13.671783895954905, -89.28028724905083).
+cruze(crr_panamericana, av_zablah_touche, 13.672870832443284, -89.28129476457642).
+cruze(crr_panamericana, novena_av_sur, 13.671866581501604, -89.28245783718987).
+cruze(crr_panamericana, septima_av_sur, 13.672974464712187, -89.28355657966665).
+cruze(crr_panamericana, quinta_av_sur, 13.671965768542666, -89.28475686300368).
+cruze(crr_panamericana, tercera_av_sur, 13.67305653852377, -89.28581892895198).
+cruze(crr_panamericana, primera_av_sur, 13.67206008150411, -89.28699974526914).
+
+
 % Carretera chiltiupan
 
 tramo(nueve_cll_ost, septima_cll_ort, primera_av_nrt).
