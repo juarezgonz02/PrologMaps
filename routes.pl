@@ -257,6 +257,10 @@ tramo(cll_comasagua, av_teotepeque, av_tacachio).
 tramo(av_teotepeque, cll_comasagua, av_tacachio).
 tramo(cll_comasagua, av_teotepeque, av_jayaque).
 tramo(av_teotepeque, cll_comasagua, av_jayaque).
+tramo(cll_tamanique, cll_la_libertad, av_teotepeque).
+tramo(cll_la_libertad, cll_tamanique, av_teotepeque).
+tramo(cll_tamanique, cll_la_libertad, av_ateos).
+tramo(cll_la_libertad, cll_tamanique, av_ateos).
 
 cruze(cll_tamanique, av_teotepeque, 13.674668334947087, -89.26828230655781).
 cruze(cll_opico, av_teotepeque, 13.674079469899638, -89.26851834449782).
@@ -288,6 +292,10 @@ cruze(cll_comasagua, av_tacachio, 13.67723399918385, -89.26607109293087).
 cruze(av_teotepeque, av_tacachio, 13.676597102020304, -89.26606949807991).
 cruze(cll_comasagua, av_jayaque, 13.677349270197512, -89.26440335725754).
 cruze(av_teotepeque, av_jayaque, 13.676650388158722, -89.2644926689105).
+cruze(cll_tamanique, av_teotepeque, 13.675332140214325, -89.26799987978693).
+cruze(cll_la_libertad, av_teotepeque, 13.67409614704586, -89.26855189867821).
+cruze(cll_tamanique, av_ateos, 13.675619580916322, -89.26863758069275).
+cruze(cll_la_libertad, av_ateos, 13.674309769789387, -89.26915859774134).
 
 tramo(seis_cll_ost, crr_panamericana, av_san_martin).
 tramo(crr_panamericana, seis_cll_ost, primera_av_sur).
@@ -386,6 +394,138 @@ cruze(quinta_av_nrt, nueve_cll_ost, 13.679532507289194, -89.28323207247549).
 cruze(septima_av_nrt, cll_chiltiupan, 13.679453613967471, -89.28096984620294).
 cruze(once_av_nrt, cll_chiltiupan, 13.67934171513429, -89.27867533339264).
 cruze(quince_av_nrt, cll_chiltiupan, 13.679366405017202, -89.27688729020034).
+
+tramo(av_san_martin, primera_av_sur, crr_panamericana).
+tramo(av_san_martin, primera_av_sur, seis_cll_ost).
+tramo(primera_av_sur, tercera_av_sur, crr_panamericana).
+tramo(primera_av_sur, tercera_av_sur, seis_cll_ost).
+tramo(tercera_av_sur, quinta_av_sur, crr_panamericana).
+tramo(tercera_av_sur, quinta_av_sur, seis_cll_ost).
+tramo(tercera_av_sur, quinta_av_sur, crr_panamericana).
+tramo(tercera_av_sur, quinta_av_sur, seis_cll_ost).
+tramo(septima_av_nrt, novena_av_sur, crr_panamericana).
+tramo(septima_av_nrt, novena_av_sur, seis_cll_ost).
+tramo(novena_av_sur, ave_zablah_touche, crr_panamericana).
+tramo(novena_av_sur, ave_zablah_touche, seis_cll_ost).
+tramo(ave_zablah_touche, quince_av_sur, crr_panamericana).
+tramo(ave_zablah_touche, quince_av_sur, seis_cll_ost).
+
+cruze(av_san_martin, crr_panamericana, 13.671999790261562, -89.28700610118996).
+cruze(av_san_martin, seis_cll_ost, 13.670929669719387, -89.28703330447338).
+cruze(primera_av_sur, crr_panamericana, 13.67196956254602, -89.28587797613886).
+cruze(primera_av_sur, seis_cll_ost, 13.670903620970298, -89.28589943380996).
+cruze(tercera_av_sur, crr_panamericana, 13.671906092944097, -89.28476018100703).
+cruze(tercera_av_sur, seis_cll_ost, 13.670847474067712, -89.28479786135112).
+cruze(tercera_av_sur, crr_panamericana, 13.67189065979264, -89.28362411601005).
+cruze(tercera_av_sur, seis_cll_ost, 13.670813989476335, -89.2836598466158).
+cruze(septima_av_nrt, crr_panamericana, 13.671822402125944, -89.28244137037917).
+cruze(septima_av_nrt, seis_cll_ost, 13.67077012176692, -89.28249257879867).
+cruze(novena_av_sur, crr_panamericana, 13.671764217706645, -89.28135537095663).
+cruze(novena_av_sur, seis_cll_ost, 13.670784045418255, -89.28138523594959).
+cruze(ave_zablah_touche, crr_panamericana, 13.671714063606716, -89.27907510581628).
+cruze(ave_zablah_touche, seis_cll_ost, 13.6706418147298, -89.2791131008101).
+
+
+tramo(diesciete_av_nrt, diecinueve_av_nrt, cll_el_carmen).
+tramo(diecinueve_av_nrt, diesciete_av_nrt, cll_el_carmen).
+cruze(diesciete_av_nrt, cll_el_carmen, 13.677062623480088, -89.27601049762043).
+cruze(diecinueve_av_nrt, cll_el_carmen, 13.677152475116944, -89.27703898730641).
+
+tramo(av_boqueron, av_ateos, cll_cuisnahuat).
+tramo(av_ateos, av_boqueron, cll_cuisnahuat).
+tramo(av_boqueron, av_ateos, cll_ishuhatan).
+tramo(av_ateos, av_boqueron, cll_ishuhatan).
+tramo(av_el_rosario, av_boqueron, cll_la_libertad).
+tramo(av_boqueron, av_el_rosario, cll_la_libertad).
+tramo(av_boqueron, av_ateos, cll_la_libertad).
+tramo(av_ateos, av_boqueron, cll_la_libertad).
+tramo(av_el_rosario, av_boqueron, cll_cuyagualo).
+tramo(av_boqueron, av_el_rosario, cll_cuyagualo).
+tramo(av_boqueron, av_ateos, cll_cuyagualo).
+tramo(av_ateos, av_boqueron, cll_cuyagualo).
+tramo(av_el_balsamar, av_el_rosario, cll_chiltiupan).
+tramo(av_el_rosario, av_boqueron, cll_tepeagua).
+tramo(av_boqueron, av_el_rosario, cll_tepeagua).
+tramo(av_boqueron, av_ateos, cll_tepeagua).
+tramo(av_ateos, av_boqueron,  cll_tepeagua).
+tramo(av_boqueron, av_ateos, cll_ayagualo).
+tramo(av_ateos, av_boqueron, cll_ayagualo).
+tramo(av_B, av_boqueron, cll_chiltiupan).
+tramo(av_boqueron, av_ateos, cll_chiltiupan).
+
+cruze(av_boqueron, cll_cuisnahuat, 13.674477832388863, -89.26912692625038).
+cruze(av_ateos, cll_cuisnahuat, 13.675442890518843, -89.27149404662167).
+cruze(av_boqueron, cll_ishuhatan, 13.675006775923464, -89.26886344092975).
+cruze(av_ateos, cll_ishuhatan, 13.676018339358537, -89.27125336395568).
+cruze(av_el_rosario, cll_la_libertad, 13.676625683397033, -89.27102121255547).
+cruze(av_boqueron, cll_la_libertad, 13.677655696857245, -89.27345574725653).
+cruze(av_boqueron, cll_la_libertad, 13.675627344987438, -89.26863255043892).
+cruze(av_ateos, cll_la_libertad, 13.676615080495997, -89.27101435193619).
+cruze(av_el_rosario, cll_cuyagualo, 13.677216607100371, -89.27072090352496).
+cruze(av_boqueron, cll_cuyagualo, 13.678256264795262, -89.27318719081346).
+cruze(av_boqueron, cll_cuyagualo, 13.676195244424477, -89.26836855108718).
+cruze(av_ateos, cll_cuyagualo, 13.67722675086302, -89.27074835444998).
+cruze(av_el_balsamar, cll_chiltiupan, 13.679632483415645, -89.27266637191461).
+cruze(av_el_rosario, cll_tepeagua, 13.677785452479814, -89.27048014120875).
+cruze(av_boqueron, cll_tepeagua, 13.678826657121455, -89.27294149000099).
+cruze(av_boqueron, cll_tepeagua, 13.676773777596908, -89.26811413547678).
+cruze(av_ateos, cll_tepeagua, 13.677782562505048, -89.27047793068441).
+cruze(av_boqueron, cll_ayagualo, 13.677366988481237, -89.26784010529322).
+cruze(av_ateos, cll_ayagualo, 13.678372766746179, -89.27022519800525).
+cruze(av_B, cll_chiltiupan, 13.679040025777809, -89.26992811534164).
+cruze(av_boqueron, cll_chiltiupan, 13.677932928633082, -89.26759963288329).
+
+
+tramo(av_ateos, av_teotepeque, cll_tamanique).
+tramo(v_teotepeque, av_ateos, a cll_tamanique).
+tramo(av_teotepeque, av_jicalpa, cll_opico).
+tramo(av_jicalpa, av_teotepeque, cll_opico).
+tramo(av_jicalpa, av_jayaque, cll_opico).
+tramo(av_jayaque, av_jicalpa, cll_opico).
+tramo(av_teotepeque, av_jicalpa, cll_la_libertad).
+tramo(av_jicalpa, av_teotepeque, cll_la_libertad).
+tramo(av_jicalpa, av_jayaque, cll_la_libertad).
+tramo(av_jayaque, av_jicalpa, cll_la_libertad).
+tramo(av_teotepeque, av_tacachio, cll_talnique).
+tramo(av_tacachio, av_teotepeque, cll_talnique).
+tramo(av_tacachio, av_jayaque, cll_talnique).
+tramo(av_jayaque, av_tacachio, cll_talnique).
+tramo(av_ateos, av_teotepeque, cll_comasagua).
+tramo(av_teotepeque, av_ateos, cll_comasagua).
+tramo(av_teotepeque, av_tacachio, cll_comasagua).
+tramo(av_tacachio, av_teotepeque, cll_comasagua).
+tramo(av_tacachio, av_jayaque, cll_comasagua).
+tramo(av_jayaque, av_tacachio, cll_comasagua).
+tramo(av_teotepeque, av_tacachio, av_teotepeque).
+tramo(av_tacachio, av_teotepeque, av_teotepeque).
+tramo(av_tacachio, av_jayaque, av_teotepeque).
+tramo(av_jayaque, av_tacachio, av_teotepeque).
+
+cruze(av_ateos, cll_tamanique, 13.674086792739857, -89.26855655981588).
+cruze(v_teotepeque, cll_tamanique, 13.674313041058195, -89.26916419802599).
+cruze(av_teotepeque, cll_opico, 13.67439801099678, -89.26649858212684).
+cruze(av_jicalpa, cll_opico, 13.674665784871127, -89.2682680626337).
+cruze(av_jicalpa, cll_opico, 13.67444605686997, -89.26485234701872).
+cruze(av_jayaque, cll_opico, 13.674406089439444, -89.26649443552864).
+cruze(av_teotepeque, cll_la_libertad, 13.675141545904438, -89.26652987952015).
+cruze(av_jicalpa, cll_la_libertad, 13.675359001242983, -89.26796940506797).
+cruze(av_jicalpa, cll_la_libertad, 13.67521436809892, -89.264742394327).
+cruze(av_jayaque, cll_la_libertad, 13.67513385514629, -89.26654401515303).
+cruze(av_teotepeque, cll_talnique, 13.675949086516342, -89.26603555803338).
+cruze(av_tacachio, cll_talnique, 13.676072366260632, -89.26766212449179 ).
+cruze(av_tacachio, cll_talnique, 13.675997789029779, -89.26462714926151).
+cruze(av_jayaque, cll_talnique, 13.675936975434366, -89.26601546638503).
+cruze(av_ateos, cll_comasagua, 13.67666147818032, -89.2674200451032).
+cruze(av_teotepeque, cll_comasagua, 13.676934216981806, -89.26802885630161).
+cruze(av_teotepeque, cll_comasagua, 13.676583236914876, -89.26604478027025).
+cruze(av_tacachio, cll_comasagua, 13.676664321482736, -89.26741033809665).
+cruze(av_tacachio, cll_comasagua, 13.676649655065459, -89.26450891832289).
+cruze(av_jayaque, cll_comasagua, 13.676603584288827, -89.26603948105334).
+cruze(av_teotepeque, av_teotepeque, 13.677217878152067, -89.26606357988298).
+cruze(av_tacachio, av_teotepeque, 13.677177335966949, -89.26713326684701).
+cruze(av_tacachio, av_teotepeque, 13.67734154890469, -89.26441125824662).
+cruze(av_jayaque, av_teotepeque, 13.677234665003189, -89.26606130728686).
+
 
 
 
