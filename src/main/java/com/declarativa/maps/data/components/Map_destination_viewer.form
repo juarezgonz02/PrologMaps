@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.declarativa.maps.data.components.Map_destination_viewer">
+  <grid id="27dc6" binding="panel1" custom-create="true" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="500" height="200"/>
+    </constraints>
+    <properties>
+      <background color="-16711765"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="6aaa9" binding="from_panel" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="ceec1" binding="to_panel" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <component id="65042" class="javax.swing.JLabel" binding="de">
+        <constraints/>
+        <properties>
+          <text value="dede"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
