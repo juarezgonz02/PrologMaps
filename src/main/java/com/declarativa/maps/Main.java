@@ -3,6 +3,7 @@ package com.declarativa.maps;
 import com.declarativa.maps.data.JXMapViewerCustom;
 import com.declarativa.maps.data.RoutingData;
 import com.declarativa.maps.data.RoutingService;
+import com.declarativa.maps.data.components.Map_destination_viewer;
 import com.declarativa.maps.jpl.PrologHelper;
 import com.declarativa.maps.waypoint.EventWaypoint;
 import com.declarativa.maps.waypoint.GenericWaypoint;
@@ -36,11 +37,13 @@ public class Main extends JFrame {
     private PrologHelper prolog ;
     private GenericWaypoint start = null;
     private GenericWaypoint end = null;
+    private String prologFile = "routes.pl";
 
     public Main() {
         initComponents();
         init();
     }
+
 
     private void init() {
         TileFactoryInfo  info = new VirtualEarthTileFactoryInfo(VirtualEarthTileFactoryInfo.MAP);
@@ -56,6 +59,8 @@ public class Main extends JFrame {
         jXMapViewer.addMouseListener(mm);
         jXMapViewer.addMouseMotionListener(mm);
         jXMapViewer.addMouseWheelListener(new ZoomMouseWheelListenerCenter(jXMapViewer));
+
+
     }
 
     private void addWaypoint(GenericWaypoint waypoint) {
@@ -83,11 +88,11 @@ public class Main extends JFrame {
         if (start != null && end != null) {
             List<GHPoint> points = new ArrayList<>();
 
-            points.add(start.getGHPoint());
+            //points.add(start.getGHPoint());
 
-            points.addAll(prolog.getRoute());
+           points.addAll(prolog.getRoute(start.getSection(), end.getSection()));
 
-            points.add(end.getGHPoint());
+           // points.add(end.getGHPoint());
 
             routingData = RoutingService.getInstance().routing(points);
 
@@ -110,12 +115,14 @@ public class Main extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        prolog = PrologHelper.start_consult("ej5.pl");
+        prolog = PrologHelper.start_consult(prologFile);
 
         JMenuItem menuStart = new JMenuItem();
         JMenuItem menuEnd = new JMenuItem();
         jXMapViewer = JXMapViewerCustom.getInstance();
+
         // Variables declaration - do not modify//GEN-BEGIN:variables
+        Map_destination_viewer mapDestinationViewer = new Map_destination_viewer();
         JButton cmdClear = new JButton();
 
         prolog.createWaypoints().forEach(this::addWaypoint);
@@ -136,25 +143,29 @@ public class Main extends JFrame {
        GroupLayout jXMapViewerLayout = new GroupLayout(jXMapViewer);
 
         jXMapViewer.setLayout(jXMapViewerLayout);
+
+
         jXMapViewerLayout.setHorizontalGroup(
-            jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jXMapViewerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cmdClear)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 761, Short.MAX_VALUE)
-                .addContainerGap())
+                jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jXMapViewerLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(mapDestinationViewer)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cmdClear)
+                                .addContainerGap(761, Short.MAX_VALUE)
+                        )
         );
 
         jXMapViewerLayout.setVerticalGroup(
-            jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jXMapViewerLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cmdClear))
-                .addContainerGap(626, Short.MAX_VALUE))
+                jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jXMapViewerLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(jXMapViewerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(cmdClear)
+                                        .addComponent(mapDestinationViewer))
+                                .addContainerGap(626, Short.MAX_VALUE)
+                        )
         );
-
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
 

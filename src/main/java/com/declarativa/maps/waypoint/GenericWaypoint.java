@@ -27,6 +27,7 @@ public class GenericWaypoint extends DefaultWaypoint implements EventWaypoint{
     private PointType pointType;
     private Component parent;
     private String styleType;
+    private String section;
     private GHPoint ghPoint;
 
     private PopUpOnWaypointMenu popUpMenu = PopUpOnWaypointMenu.getInstance();
@@ -35,11 +36,12 @@ public class GenericWaypoint extends DefaultWaypoint implements EventWaypoint{
         return new GHPoint(this.getPosition().getLatitude(), this.getPosition().getLongitude());
     }
 
-    public GenericWaypoint(String name, PointType pointType, GeoPosition coord, String type) {
+    public GenericWaypoint(String name, PointType pointType, GeoPosition coord, String type, String section) {
         super(coord);
         this.name = name;
         this.pointType = pointType;
         this.styleType = type;
+        this.section = section;
 
         initButton();
     }

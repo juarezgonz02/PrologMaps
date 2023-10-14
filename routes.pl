@@ -1,55 +1,36 @@
-consult("routes.pl").
-
-% lugar('nombre', latitud, longitud, tipo)
-
-lugar('Cafetalon', 13.676566396794092, -89.2833433105481, parque).
-lugar('Climosal', 13.675123700882084, -89.29010906898763, salud).
-lugar('Colegio Fatima', 13.67130270093074, -89.28404001848129, educacion).
 
 % Parques, eco parques, zonas verdes, canchas, plazas, complejos deportivos
 
-lugar('Parque Refugio de La Paz', 13.679852273915275, -89.29148434548138, parque).
-lugar('Parque Daniel Hernández', 13.673680991582346, -89.28872366264007, parque).
-lugar('Parque San Martín', 13.673488136403295, -89.2852592763294, parque).
-lugar('Parque de la Familia', 13.682111676728264, -89.28247378319311, parque).
-lugar('Parque Refugio de La Paz', 13.679892806611054, -89.2914445729038, parque).
-lugar('Parque Colonia Monte Sión', 13.682851282566574, -89.29035293037498, parque).
+lugar('Parque Refugio de La Paz', 13.679852273915275, -89.29148434548138, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), parque).
+lugar('Parque Daniel Hernandez', 13.673680991582346, -89.28872366264007, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), parque).
+lugar('Parque San Martin', 13.673488136403295, -89.2852592763294, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), parque).
+lugar('Parque de la Familia', 13.682111676728264, -89.28247378319311, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), parque).
+lugar('Parque Colonia Montesion', 13.682851282566574, -89.29035293037498, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), parque).
 
 % Gasolineras
 
-lugar('UNO', 13.673578103771643, -89.30026948228978, gasolinera).
-lugar('Puma Energy', 13.673758640830359, -89.29810936129101, gasolinera).
-lugar('TEXACO • RV Santa Tecla', 13.67233440615656, -89.29746441551245, gasolinera).
-lugar('UNO • Utila', 13.663671879852798, -89.2771208013784, gasolinera).
-lugar('Food Mart • TEXACO SERVITEX', 13.671872056756083, -89.27582206428401, gasolinera).
 
 % Centros comerciales
 
-lugar('Plaza Merliot',13.67877495811841, -89.27606475597719, centro_comercial).
-lugar('Centro Comercial El Gran Bazar', 13.679249297522693, -89.26387818958837, centro_comercial).
-lugar('Centro Comercial La Sabana', 13.681358215431388, -89.27035834645521, centro_comercial).
-lugar('Centro Comercial Santa Rosa', 13.678304959243917, -89.30060957924357, centro_comercial).
-lugar('Centro Comercial Holanda', 13.673767120154867, -89.29424054736297, centro_comercial).
-lugar('Centro Comercial Las Ramblas',13.671782528757827, -89.26975558530522, centro_comercial).
+lugar('Plaza Merliot',13.67877495811841, -89.27606475597719, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), centro_comercial).
+lugar('Centro Comercial Santa Rosa', 13.678304959243917, -89.30060957924357, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), centro_comercial).
+lugar('Centro Comercial Holanda', 13.673767120154867, -89.29424054736297, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), centro_comercial).
 
 
 % Lugar salud
-lugar('Clinica Las Colinas', 13.67855167164722, -89.29131126343472, salud).
-lugar('Hospital Poclinica Casa de Salud', 13.677073224490627, -89.29023362288207, salud).
-lugar('Veterinario Perriqueria de Bob', 13.679382999604572, -89.2828848283768, salud).
-lugar('Veterinaria Chiltiupan', 13.679412970053662, -89.28271182588809, salud).
-lugar('Hospital San Rafael', 13.671060438806595, -89.27825739376543, salud).
+lugar('Clinica Las Colinas', 13.67855167164722, -89.29131126343472, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), salud).
+lugar('Hospital Poclinica Casa de Salud', 13.677073224490627, -89.29023362288207, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), salud).
+lugar('Veterinaria Chiltiupan', 13.679412970053662, -89.28271182588809, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), salud).
+lugar('Hospital San Rafael', 13.671060438806595, -89.27825739376543, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), salud).
 
 
 % Lugar Educacion
 
-lugar('Universidad Tecnica Latinoamericana', 13.677980352110804, -89.28610511556039, educacion).
-lugar('Colegio Santa Cecilia', 13.677739067604412, -89.28740538441009, educacion).
-lugar('Academia Municipal de idiomas', 13.679422547925917, -89.28433145529742, educacion).
-lugar('Colegio el arca de los suenos', 13.678577322860063, -89.28133921716716, educacion).
-lugar('Colegio Champagnat', 13.677793776678312, -89.2822002518485, educacion).
-lugar('Centro Educativo Samaria', 13.676758400942308, -89.29160799874656, educacion).
-lugar('Colegio Coralia Haydee Quiroz', 13.67748731231392, -89.2889276275404, educacion).
+lugar('Universidad Tecnica Latinoamericana', 13.677980352110804, -89.28610511556039, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), educacion).
+lugar('Colegio Santa Cecilia', 13.677739067604412, -89.28740538441009, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), educacion).
+lugar('Academia Municipal de idiomas', 13.679422547925917, -89.28433145529742, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), educacion).
+lugar('Colegio el arca de los suenos', 13.678577322860063, -89.28133921716716, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), educacion).
+lugar('Colegio Champagnat', 13.677793776678312, -89.2822002518485, tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt), educacion).
 
 % tramo(inicio calle/avenida, final calle/avenida, calle/avenida por la que pasa)
 
@@ -58,7 +39,7 @@ lugar('Colegio Coralia Haydee Quiroz', 13.67748731231392, -89.2889276275404, edu
 % cll = calle
 % sur = sur
 % nrt = norte
-% 
+%
 % ost = oeste
 % ort = oriente
 % cll_dh = Calle Daniel Hernandez
@@ -75,7 +56,6 @@ tramo(p_concepcion, cll_dh, decima_av_nrt).
 tramo(p_concepcion, cll_dh, sexta_av_nrt).
 tramo(p_concepcion, cll_dh, decime_sexta_av_nrt).
 
-cruze(p_concepcion, segunda_av_nrt).
 cruze(p_concepcion, cuarta_av_nrt, 13.675438424759353, -89.29023249521323).
 cruze(p_concepcion, sexta_av_nrt, 13.675490603934886, -89.29140091164349).
 cruze(p_concepcion, octava_av_nrt, 13.675549107846576, -89.29250423524358).
@@ -93,22 +73,30 @@ cruze(cll_dh, doce_av_nrt, 13.674479011828982, -89.29479298933757).
 cruze(cll_dh, catorce_av_nrt, 13.674552436990172, -89.29590495137467).
 cruze(cll_dh, av_dr_manuel, 13.674250584216995, -89.28804226345905).
 
-% -------------------- Victor -----------------------------------------------------
-
 tramo(cll_jose_ciriaco_lopez, crr_panamericana, primera_av_sur).
 tramo(cll_jose_ciriaco_lopez, crr_panamericana, quinta_av_sur).
 tramo(cll_jose_ciriaco_lopez, p_carmen, septima_av_nrt).
 tramo(cll_jose_ciriaco_lopez, p_carmen, tercera_av_nrt).
 
-cruze(cll_jose_ciriaco_lopez, primera_av_sur, 13.674222123280137, -89.2868880084602).
-cruze(cll_jose_ciriaco_lopez, quinta_av_sur, 13.674148327754192, -89.28462493701478).
+cruze(cll_jose_ciriaco_lopez, primera_av_nrt, 13.674222123280137, -89.2868880084602).
+cruze(cll_jose_ciriaco_lopez, quinta_av_nrt, 13.674148327754192, -89.28462493701478).
 cruze(cll_jose_ciriaco_lopez, septima_av_nrt, 13.674098489318908, -89.2835101743744).
 cruze(cll_jose_ciriaco_lopez, tercera_av_nrt, 13.674206934702113, -89.28578096889119).
+
+cruze(cll_jose_ciriaco_lopez, primera_av_sur, 13.674222123280137, -89.2868880084602).
+cruze(cll_jose_ciriaco_lopez, quinta_av_sur, 13.674148327754192, -89.28462493701478).
+cruze(cll_jose_ciriaco_lopez, septima_av_sur, 13.674098489318908, -89.2835101743744).
+cruze(cll_jose_ciriaco_lopez, tercera_av_sur, 13.674206934702113, -89.28578096889119).
 
 tramo(p_carmen, cll_jose_ciriaco_lopez, primera_av_nrt).
 tramo(p_carmen, tercera_cll_ost, tercera_av_nrt).
 tramo(p_carmen, cll_jose_ciriaco_lopez, quinta_av_nrt).
 tramo(p_carmen, tercera_cll_ost, segunda_av_nrt).
+
+tramo(tercera_av_sur, quinta_av_sur, p_carmen).
+tramo(tercera_av_nrt, quinta_av_nrt, p_carmen).
+tramo(primera_av_sur, tercera_av_sur, cll_jose_ciriaco_lopez).
+tramo(primera_av_nrt, tercera_av_nrt, cll_jose_ciriaco_lopez).
 
 cruze(p_carmen, primera_av_nrt, 13.675328685705798, -89.28686420513289).
 cruze(p_carmen, tercera_av_nrt, 13.675266578789934, -89.28573426126957).
@@ -211,44 +199,78 @@ cruze(cll_el_carmen, diesciete_av_nrt, 13.6771534764459, -89.27705227973004).
 cruze(cll_el_carmen, diesciete_av_nrt, 13.6771534764459, -89.27705227973004).
 cruze(cll_el_carmen, diesciete_av_nrt, 13.67704290680344, -89.27600155884694).
 
+flatten_list([], []).
+flatten_list([H|T], FlatList) :- 
+    is_list(H), 
+    flatten_list(H, HFlat), 
+    flatten_list(T, TFlat), 
+    append(HFlat, TFlat, FlatList).
+flatten_list([H|T], [H|TFlat]) :- 
+    \+ is_list(H), 
+    flatten_list(T, TFlat).
 
-siguiente_tramo(tramo(A,B,C), tramo(A, M, C), Lat, Long):-
-    cruze(B, C, Lat, Long),
-    tramo(A, M, C).
+% Predicado principal que recibe la lista anidada y devuelve la lista plana
+flatten_nested_list(NestedList, FlatList) :-
+    flatten_list(NestedList, FlatList).
 
-siguiente_tramo(tramo(A,B,C), tramo(C, M, A), Lat, Long):-
-    cruze(B, C, Lat, Long),
-    tramo(C, M, A).
 
-ir_hacia(tramo(A, B, C), tramo(X, Y, Z), Ruta):-
+siguiente_tramo(tramo(_,B,C), tramo(B, M, C), Lat, Long):-
+    (
+        cruze(B, C, Lat, Long);
+        cruze(C, B, Lat, Long)
+    ),
+    tramo(B, M, C).
+
+siguiente_tramo(tramo(_,B,C), tramo(C, M, B), Lat, Long):-
+    (
+        cruze(B, C, Lat, Long);
+        cruze(C, B, Lat, Long)
+    ),
+    tramo(C, M, B).
+
+ir_hacia(tramo(A, B, C), tramo(X, Y, Z), FlatList):-
     abolish(ruta, 1),
+    abolish(coords, 2),
     assert(ruta(tramo(A, B, C))),
     trazar_ruta(tramo(A, B, C), tramo(X, Y, Z), Ruta),
-    writeln(X).
+    flatten_nested_list(Ruta, FlatList).
 
 %Llegar recto.
-trazar_ruta(tramo(_,B,T), tramo(B,C,T), []):-
+trazar_ruta(tramo(_,B,T), tramo(B,C,T), [Lat, Long]):-
+    (
+        cruze(B, T, Lat, Long);
+        cruze(T, B, Lat, Long)
+    ),
     assert(ruta(tramo(B, C, T))),
     !.
 
 %Llegar lateral.
-trazar_ruta(tramo(_,A,C), tramo(C,D,A), []):-
+trazar_ruta(tramo(_,A,C), tramo(C,D,A), [Lat, Long]):-
+    (
+        cruze(A, C, Lat, Long);
+        cruze(C, A, Lat, Long)
+    ),
     assert(ruta(tramo(C, D, A))),
     !.
 
 %Llegar a ruta ya tomada.
-trazar_ruta(tramo(A,B,C), tramo(X,Y,Z), RUTA):-
+trazar_ruta(tramo(A,B,C), tramo(_,_,_), _):-
+    not(siguiente_tramo(tramo(A,B,C), tramo(L,M,N), L, G)),
+    fail, !.
+
+trazar_ruta(tramo(A,B,C), tramo(_,_,_), _):-
     siguiente_tramo(tramo(A,B,C), tramo(L,M,N), L, G),
+    writeln(tramo(L,M,N)),
     ruta(tramo(L, M, N)),
-    fail.
+    fail, !.
 
 %Llamada recursiva.
-trazar_ruta(tramo(A,B,C), tramo(X,Y,Z), [NRuta|[Lat, Long]]):-
+trazar_ruta(tramo(A,B,C), tramo(X,Y,Z), [NRuta|[[Lat, Long]]]):-
     siguiente_tramo(tramo(A,B,C), tramo(L,M,N), Lat, Long),
+    writeln(tramo(L,M,N)),
     not(ruta(tramo(L, M, N))),
     assert(ruta(tramo(L, M, N))),
     trazar_ruta(tramo(L, M, N), tramo(X,Y,Z), NRuta),
-    writeln(Z),
     !.
 
 

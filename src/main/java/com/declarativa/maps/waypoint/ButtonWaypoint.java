@@ -17,7 +17,6 @@ public class ButtonWaypoint extends JPanel {
 
         Graphics2D g2 = (Graphics2D) g.create();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-
         super.paintComponent(g2);
 
 
@@ -25,10 +24,12 @@ public class ButtonWaypoint extends JPanel {
 
     public ButtonWaypoint(String name, String styleType, MouseAdapter eventCallback) {
 
-        super.setSize(new Dimension(120, 110));
+        super.setSize(new Dimension(name.length()*12, 130));
 
         JButton button = new JButton();
         JLabel label = new JLabel();
+
+        super.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS)); // Establece el administrador de diseño en vertical
 
         label.setText(name);
         label.setLabelFor(button);
