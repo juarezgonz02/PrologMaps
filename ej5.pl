@@ -2,10 +2,6 @@ consult("routes.pl").
 
 % lugar('nombre', latitud, longitud, tipo)
 
-lugar('Cafetalon', 13.676566396794092, -89.2833433105481, parque).
-lugar('Climosal', 13.675123700882084, -89.29010906898763, salud).
-lugar('Colegio Fatima', 13.67130270093074, -89.28404001848129, educacion).
-
 % Parques, eco parques, zonas verdes, canchas, plazas, complejos deportivos
 
 lugar('Parque Refugio de La Paz', 13.679852273915275, -89.29148434548138, parque).

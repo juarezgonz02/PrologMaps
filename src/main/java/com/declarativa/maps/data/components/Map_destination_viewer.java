@@ -11,7 +11,7 @@ public class Map_destination_viewer extends JPanel {
 
         // Calcular el tamaño del panel como el 30% de la pantalla
         int width = (int) (screenSize.getWidth() * 0.1);
-        int height = (int) (screenSize.getHeight() * 0.05);
+        int height = (int) (screenSize.getWidth() * 0.05);
 
         // Establecer el tamaño del panel
         setPreferredSize(new Dimension(width, height));
