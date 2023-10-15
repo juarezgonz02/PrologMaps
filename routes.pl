@@ -1,8 +1,8 @@
-% Parques, eco parques, zonas verdes, canchas, plazas, complejos deportivos
+    % Parques, eco parques, zonas verdes, canchas, plazas, complejos deportivos
 
 lugar('Parque Refugio de La Paz', 13.679852273915275, -89.29148434548138, tramo(octava_av, decima_av, nueve_cll), parque).
 lugar('Parque Daniel Hernandez', 13.673680991582346, -89.28872366264007, tramo(cll_dh, crr_panamericana, segunda_av), parque).
-lugar('Parque San Martin', 13.673488136403295, -89.2852592763294, tramo(cll_dh, crr_panamericana, quinta_av), parque).
+lugar('Parque San Martin', 13.673488136403295, -89.2852592763294, tramo(tercera_av, quinta_av, cll_ciriaco), parque).
 lugar('Parque de la Familia', 13.682111676728264, -89.28247378319311, tramo(p_carmen, cll_dh, primera_av), parque).
 lugar('Parque Colonia Montesion', 13.682851282566574, -89.29035293037498, tramo(p_carmen, cll_dh, primera_av), parque).
 
@@ -12,25 +12,25 @@ lugar('Gas Iraheta', 13.670551592827549, -89.293725867705, tramo(p_carmen, cll_d
 
 % Centros comerciales
 
-lugar('Plaza Merliot',13.67877495811841, -89.27606475597719, tramo(p_carmen, cll_dh, primera_av), centro_comercial).
+lugar('Plaza Merliot',13.67877495811841, -89.27606475597719, tramo(quince_av, diecisiete_av, cll_chiltiupan), centro_comercial).
 lugar('Centro Comercial Santa Rosa', 13.678304959243917, -89.30060957924357, tramo(p_carmen, cll_dh, primera_av), centro_comercial).
-lugar('Centro Comercial Holanda', 13.673767120154867, -89.29424054736297, tramo(p_carmen, cll_dh, primera_av), centro_comercial).
+lugar('Centro Comercial Holanda', 13.673767120154867, -89.29424054736297, tramo(cll_dh, crr_panamericana, doce_av), centro_comercial).
 
 
 % Lugar salud
-lugar('Clinica Las Colinas', 13.67855167164722, -89.29131126343472, tramo(p_carmen, cll_dh, primera_av), salud).
-lugar('Hospital Poclinica Casa de Salud', 13.677073224490627, -89.29023362288207, tramo(p_carmen, cll_dh, primera_av), salud).
-lugar('Veterinaria Chiltiupan', 13.679412970053662, -89.28271182588809, tramo(p_carmen, cll_dh, primera_av), salud).
-lugar('Hospital San Rafael', 13.671060438806595, -89.27825739376543, tramo(p_carmen, cll_dh, primera_av), salud).
+lugar('Clinica Las Colinas', 13.67855167164722, -89.29131126343472, tramo(octava_av, sexta_av, septima_cll), salud).
+lugar('Hospital Poclinica Casa de Salud', 13.677073224490627, -89.29023362288207, tramo(segunda_av, cuarta_av, tercera_cll), salud).
+lugar('Veterinaria Chiltiupan', 13.679412970053662, -89.28271182588809, tramo(septima_av, once_av, nueve_cll), salud).
+lugar('Hospital San Rafael', 13.671060438806595, -89.27825739376543, tramo(sexta_cll, crr_panamericana, quince_av), salud).
 
 
 % Lugar Educacion
 
-lugar('Universidad Tecnica Latinoamericana', 13.677980352110804, -89.28610511556039, tramo(p_carmen, cll_dh, primera_av), educacion).
-lugar('Colegio Santa Cecilia', 13.677739067604412, -89.28740538441009, tramo(p_carmen, cll_dh, primera_av), educacion).
-lugar('Academia Municipal de idiomas', 13.679422547925917, -89.28433145529742, tramo(p_carmen, cll_dh, primera_av), educacion).
-lugar('Colegio el arca de los suenos', 13.678577322860063, -89.28133921716716, tramo(p_carmen, cll_dh, primera_av), educacion).
-lugar('Colegio Champagnat', 13.677793776678312, -89.2822002518485, tramo(p_carmen, cll_dh, primera_av), educacion).
+lugar('Universidad Tecnica Latinoamericana', 13.677980352110804, -89.28610511556039, tramo(primera_av, tercera_av, quinta_cll), educacion).
+lugar('Colegio Santa Cecilia', 13.677739067604412, -89.28740538441009, tramo(nueve_cll, quinta_cll, primera_av), educacion).
+lugar('Academia Municipal de idiomas', 13.679422547925917, -89.28433145529742, tramo(tercera_av, quinta_av, nueve_cll), educacion).
+lugar('Colegio el arca de los suenos', 13.678577322860063, -89.28133921716716, tramo(once_av, septima_av, siete_cll), educacion).
+lugar('Colegio Champagnat', 13.677793776678312, -89.2822002518485, tramo(septima_av, quince_av, quinta_cll), educacion).
 
 % tramo(inicio calle/avenida, final calle/avenida, calle/avenida por la que pasa)
 
